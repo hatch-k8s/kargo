@@ -15,6 +15,11 @@ bin_dir: /usr/local/bin
 #access_ip: 1.1.1.1
 kube_apiserver_ext_ip: 5.172.40.20
 
+## The kube_apiserver_ext_ip is only used when generating the certificate protecting the apiservers
+## This is handy in case you want/have to access the apiserver through an external IP
+## that is not routable inside the cluster.
+## kube_apiserver_ext_ip: 10.10.10.10
+
 ### LOADBALANCING AND ACCESS MODES
 ## Enable multiaccess to configure etcd clients to access all of the etcd members directly
 ## as the "http://hostX:port, http://hostY:port, ..." and ignore the proxy loadbalancers.
