@@ -13,6 +13,7 @@ bin_dir: /usr/local/bin
 ## environments where the nodes are accessed remotely by the "public" ip,
 ## but don't know about that address themselves.
 #access_ip: 1.1.1.1
+kube_apiserver_ext_ip: 5.172.40.20
 
 ### LOADBALANCING AND ACCESS MODES
 ## Enable multiaccess to configure etcd clients to access all of the etcd members directly
